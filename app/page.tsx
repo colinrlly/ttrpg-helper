@@ -36,6 +36,9 @@ export default function Home() {
           ready.
         </p>
         <p className={styles.invariant}>The Scribe proposes. The DM decides.</p>
+        <a className={styles.cta} href="/studio">
+          Open the Studio →
+        </a>
       </header>
 
       <section className={styles.roadmap} aria-label="Build roadmap">

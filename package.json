@@ -13,15 +13,18 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@tiptap/pm": "^3.26.1",
+    "@tiptap/react": "^3.26.1",
+    "@tiptap/starter-kit": "^3.26.1",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
     "@types/node": "^20.16.11",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@eslint/eslintrc": "^3.2.0",
     "eslint": "^9.16.0",
     "eslint-config-next": "^15.1.0",
     "typescript": "^5.6.3"

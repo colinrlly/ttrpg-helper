@@ -30,3 +30,6 @@ next-env.d.ts
 
 # vercel
 .vercel
+
+# claude code (local, per-user)
+.claude/settings.local.json
