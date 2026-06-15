@@ -1,0 +1,48 @@
+:root {
+  /* Cozy-manuscript palette (ported from the design prototype) */
+  --parchment: #f3ecd9;
+  --parchment-raised: #faf5e8;
+  --ink: #2b2622;
+  --ink-soft: #6b6253;
+  --rule: #cdbb93;
+  --rule-soft: #e2d7bb;
+  --oxblood: #8a3324;
+  --oxblood-soft: #a8503f;
+  --gold: #b9a880;
+
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: Georgia, "Times New Roman", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--parchment);
+  background-image: radial-gradient(
+    1200px 600px at 50% -10%,
+    var(--parchment-raised),
+    var(--parchment)
+  );
+  color: var(--ink);
+  font-family: var(--font-body), Georgia, serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--oxblood);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
