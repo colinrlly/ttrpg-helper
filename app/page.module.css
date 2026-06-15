@@ -56,6 +56,22 @@
   color: var(--oxblood);
 }
 
+.cta {
+  display: inline-block;
+  margin-top: 1.75rem;
+  padding: 0.6rem 1.4rem;
+  background: var(--oxblood);
+  color: var(--parchment-raised);
+  border-radius: 8px;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.cta:hover {
+  background: var(--oxblood-soft);
+  text-decoration: none;
+}
+
 .roadmap {
   padding: 2.5rem 0 1rem;
 }

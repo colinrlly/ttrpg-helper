@@ -1,17 +1,28 @@
 :root {
-  /* Cozy-manuscript palette (ported from the design prototype) */
-  --parchment: #f3ecd9;
-  --parchment-raised: #faf5e8;
-  --ink: #2b2622;
-  --ink-soft: #6b6253;
-  --rule: #cdbb93;
-  --rule-soft: #e2d7bb;
-  --oxblood: #8a3324;
-  --oxblood-soft: #a8503f;
-  --gold: #b9a880;
+  /* Cozy-manuscript palette — exact values from the Claude Design prototype
+     (project/workspace.css). OKLCH, same as the source. */
+  --paper: oklch(0.967 0.012 90);
+  --paper-2: oklch(0.945 0.015 86);
+  --paper-3: oklch(0.925 0.018 84);
+  --edge: oklch(0.885 0.02 80);
+  --edge-strong: oklch(0.8 0.022 75);
+  --ink: oklch(0.29 0.018 55);
+  --ink-soft: oklch(0.46 0.016 58);
+  --ink-faint: oklch(0.6 0.014 60);
+  --rubric: oklch(0.47 0.122 28); /* the oxblood accent */
+  --rubric-soft: oklch(0.47 0.122 28 / 0.1);
+  --forest: oklch(0.47 0.082 158); /* vault-link green */
+  --forest-soft: oklch(0.47 0.082 158 / 0.12);
+  --gold: oklch(0.6 0.094 78); /* suggested-flag underline */
+  --gold-soft: oklch(0.64 0.094 78 / 0.12);
 
-  --font-display: Georgia, "Times New Roman", serif;
-  --font-body: Georgia, "Times New Roman", serif;
+  /* Back-compat aliases so the landing page keeps its current vocabulary. */
+  --parchment: var(--paper);
+  --parchment-raised: var(--paper-2);
+  --rule: var(--edge);
+  --rule-soft: var(--edge);
+  --oxblood: var(--rubric);
+  --oxblood-soft: oklch(0.53 0.13 28);
 }
 
 * {
@@ -25,12 +36,7 @@ body {
 }
 
 body {
-  background-color: var(--parchment);
-  background-image: radial-gradient(
-    1200px 600px at 50% -10%,
-    var(--parchment-raised),
-    var(--parchment)
-  );
+  background-color: var(--paper);
   color: var(--ink);
   font-family: var(--font-body), Georgia, serif;
   line-height: 1.6;
@@ -39,7 +45,7 @@ body {
 }
 
 a {
-  color: var(--oxblood);
+  color: var(--rubric);
   text-decoration: none;
 }
 
